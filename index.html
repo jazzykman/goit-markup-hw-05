@@ -29,10 +29,10 @@
             ><span class="logo-first-part">Web</span>Studio</a
           >
           <ul class="header-list list">
-            <li>
+            <li class="underline-item">
               <a
                 href="./index.html"
-                class="header-links link navigation-links studio-link"
+                class="header-links link navigation-links underline studio-link"
                 >Studio</a
               >
             </li>
@@ -72,7 +72,9 @@
       <section class="hero-section">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-btn btn">Order Service</button>
+          <button type="button" class="hero-btn btn" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!-- section 2 -->
@@ -414,6 +416,17 @@
           </ul>
         </div>
       </div>
+
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="modal-button" data-modal-close>
+            <svg class="close-tag" width="8px" height="8px">
+              <use href="./images/sprite.svg#icon-close-tag"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
